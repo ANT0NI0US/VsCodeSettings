@@ -1,0 +1,72 @@
+{
+  // Editor Settings
+  "editor.fontLigatures": true, // Enables font ligatures (e.g., !== becomes ≠)
+  "editor.fontWeight": "bold", // Sets font weight to bold in the editor
+  "editor.fontSize": 16, // Sets the editor font size to 16px
+  "editor.lineHeight": 1.5, // Sets line height for better readability
+  "editor.wordWrap": "on", // Enables word wrapping based on editor width
+  "editor.minimap.enabled": false, // Disables the minimap on the right
+  "editor.cursorBlinking": "expand", // Makes the cursor blinking style "expand"
+  "editor.cursorStyle": "block", // Makes the cursor appear as a block
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets Prettier as the default formatter
+  "editor.formatOnSave": true, // Formats code automatically on save
+
+  // Custom comment styling
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic" // Makes all comments italic
+        }
+      }
+    ]
+  },
+
+  // Workbench Appearance
+  "workbench.iconTheme": "material-icon-theme", // Sets the project file icon theme
+  "workbench.colorTheme": "Dark Magic", // Sets the overall theme of the editor
+  "workbench.productIconTheme": "fluent-icons", // Sets the sidebar icon style
+  "workbench.sideBar.location": "right", // Moves the sidebar to the right
+  "explorer.compactFolders": false, // Shows nested folders as expanded instead of compact
+
+  // Files and Saving Behavior
+  "files.autoSave": "onFocusChange", // Auto-saves files when editor focus is lost
+  "files.trimTrailingWhitespace": true, // Removes extra trailing whitespace on save
+
+  // ESLint Settings
+  "eslint.run": "onSave", // Runs ESLint automatically after saving
+
+  // Custom Tab Labels
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.jsx": "Page: ${dirname}" // Custom label pattern for Next.js pages
+  },
+
+  // Terminal & Console
+  "terminal.integrated.env.windows": {}, // Environment variables for integrated terminal on Windows
+  "console-ninja.featureSet": "Community", // Console Ninja plugin feature set
+
+  // Color Customizations
+  "workbench.colorCustomizations": {
+    // Match Highlight Borders
+    "editor.findMatchBorder": "#ffffff", // Border color for search match
+    "editor.findMatchHighlightBorder": "#ff0000", // Highlight border color for search match
+
+    // Selection Colors
+    "editor.selectionBackground": "#771835", // Background color of selected text
+
+    // Cursor Color
+    "editorCursor.foreground": "#dddddd" // Color of the cursor
+  },
+
+  // Custom CSS and JS (requires extension)
+  "vscode_custom_css.imports": [
+    // Requires "Custom CSS and JS Loader" extension
+    // Make sure to toggle developer tools from Help menu to apply changes
+    "file:///C:/Users/Public/Documents/custom.css",
+    "file:///C:/Users/Public/Documents/script.js"
+  ],
+
+  // Optional: Breadcrumbs
+  // "breadcrumbs.enabled": false, // Disables breadcrumbs under the open file tabs
+}
